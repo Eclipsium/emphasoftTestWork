@@ -58,7 +58,7 @@ class BS4Worker:
         if self.task_type == 'download':
             self.download(self.payload)
 
-        return {"task_type": self.task_type, "count": len(self.payload), "query": self.query, "data": self.payload}
+        return {"count": len(self.payload), "query": self.query, "data": self.payload}
 
     def get_soup(self):
         # synchronous data acquisition
